@@ -1,0 +1,11 @@
+﻿Category,Method,PSNR_dB,SSIM
+Original,LDCT,36.8836,0.90915
+Denoising,Mean,35.1052,0.94158
+Denoising,Gaussian,36.1205,0.94220
+Denoising,Adaptive Median,36.7682,0.92422
+Denoising,NLM,39.2518,0.95269
+Denoising,Wavelet,37.6683,0.93691
+Super Resolution,NLM + Nearest,24.6047,0.82142
+Super Resolution,NLM + Bilinear,26.1862,0.83767
+Super Resolution,NLM + Bicubic,27.9013,0.86125
+Reference,FDCT,GT,GT

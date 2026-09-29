@@ -1,0 +1,6 @@
+{
+    "python.defaultInterpreterPath": "/home/sanxi/.pyenv/versions/3.11.9/bin/python3.11",
+    "python.useEnvironmentsExtension": false,
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.executeInFileDir": true
+}

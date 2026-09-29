@@ -1,0 +1,8 @@
+# Python 3.11；来自本机实际安装的发行包版本。
+numpy==2.4.6
+opencv-python==5.0.0.93
+SimpleITK==2.5.6
+matplotlib==3.11.2
+PyWavelets==1.8.0
+scikit-image==0.26.0
+Pillow==12.3.0

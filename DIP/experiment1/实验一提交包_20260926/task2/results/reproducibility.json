@@ -1,0 +1,57 @@
+{
+  "command": "python task2_1/denoise_dicom.py (from package root)",
+  "python": "3.11.9 (main, Jul 23 2026, 14:40:19) [GCC 15.2.0]",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43",
+  "inputs": {
+    "fdct": {
+      "path": "full_3mm/L067/full_3mm/L067_FD_3_1.CT.0002.0001.2015.12.22.18.12.07.5968.358090401.IMA",
+      "sha256": "b1573a886f5dd78ecaa314140aeeeb70736a160a6fe0ef7af6c0483f87d4c370"
+    },
+    "ldct": {
+      "path": "quarter_3mm/L067/quarter_3mm/L067_QD_3_1.CT.0004.0001.2015.12.22.18.12.56.428910.358293547.IMA",
+      "sha256": "e0f5dd5d1de40291d9f3a74a6f5150435adcd908ab71c58ca84b4dd4fd9f1f8a"
+    }
+  },
+  "window": {
+    "center_hu": -600.0,
+    "width_hu": 1500.0
+  },
+  "pairing_checks": {
+    "Patient ID": "Anonymous",
+    "Image Position Patient": "-180.66796875\\-295.66796875\\-67",
+    "Image Orientation Patient": "1\\0\\0\\0\\1\\0",
+    "Pixel Spacing": "0.6640625\\0.6640625",
+    "Slice Thickness": "3",
+    "Convolution Kernel": "B30f",
+    "Instance Number": "1"
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "SimpleITK": "2.5.6",
+    "matplotlib": "3.11.2",
+    "PyWavelets": "1.8.0",
+    "scikit-image": "0.26.0"
+  },
+  "selection_rule": "maximize SSIM; break ties with PSNR",
+  "best_parameters": {
+    "Mean": {
+      "kernel": 3
+    },
+    "Gaussian": {
+      "kernel": 3,
+      "sigma": 1.0
+    },
+    "AdaptiveMedian": {
+      "max_window": 5
+    },
+    "NLM": {
+      "h": 4
+    },
+    "Wavelet": {
+      "wavelet": "db1",
+      "level": 2,
+      "threshold": 4
+    }
+  }
+}

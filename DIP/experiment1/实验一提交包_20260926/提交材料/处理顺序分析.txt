@@ -1,0 +1,9 @@
+参考：FDCT_512
+A 先NLM后双三次：PSNR=27.8876 dB，SSIM=0.85996
+B 先双三次后NLM：PSNR=27.9161 dB，SSIM=0.85932
+两项指标未给出一致排序，不能单凭一个指标判定全面胜出。
+
+参考：Interpolated_FDCT_2048
+A 先NLM后双三次：PSNR=39.2424 dB，SSIM=0.96948
+B 先双三次后NLM：PSNR=38.4653 dB，SSIM=0.96402
+A 的两项指标均较高。
